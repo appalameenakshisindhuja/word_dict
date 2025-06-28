@@ -1,0 +1,167 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h1 {
+    color: #4CAF50; /* A pleasant green */
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#wordInput {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1em;
+    width: 70%;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#wordInput:focus {
+    border-color: #4CAF50;
+}
+
+#searchBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#searchBtn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.result-container {
+    text-align: left;
+    border-top: 1px solid #eee;
+    padding-top: 25px;
+}
+
+.placeholder-text {
+    font-style: italic;
+    color: #888;
+}
+
+.word-display {
+    margin-bottom: 20px;
+}
+
+.word-display h2 {
+    color: #333;
+    font-size: 2.2em;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.phonetic-text {
+    font-size: 1.1em;
+    color: #666;
+    margin-left: 10px;
+}
+
+.audio-icon {
+    margin-left: 15px;
+    cursor: pointer;
+    color: #4CAF50;
+    font-size: 1.3em;
+    transition: color 0.2s ease;
+}
+
+.audio-icon:hover {
+    color: #388e3c;
+}
+
+.meaning-section {
+    margin-bottom: 20px;
+}
+
+.part-of-speech {
+    font-weight: 600;
+    color: #4CAF50;
+    font-size: 1.2em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.definition-list {
+    list-style: decimal;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.definition-item {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.definition-item strong {
+    color: #555;
+}
+
+.example {
+    font-style: italic;
+    color: #777;
+    margin-top: 5px;
+}
+
+.synonyms-antonyms {
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.error-message {
+    color: #d32f2f; /* A reddish error color */
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.source-link {
+    display: block;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #888;
+    text-align: center;
+}
+
+.source-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.source-link a:hover {
+    text-decoration: underline;
+}
